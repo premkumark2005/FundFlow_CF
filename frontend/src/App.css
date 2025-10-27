@@ -1,0 +1,312 @@
+/* Custom styles for the crowdfunding platform */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom button styles */
+.btn-primary {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.btn-secondary {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.btn-danger {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Form styles */
+.form-input {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.form-label {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.form-error {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Card styles */
+.card {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.card-header {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.card-body {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.card-footer {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Table styles */
+.table {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.table th {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.table td {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Progress bar styles */
+.progress-bar {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.progress-bar-fill {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Campaign card hover effects */
+.campaign-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.campaign-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Donation progress animation */
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+}
+
+.progress-animate {
+  animation: progressFill 1s ease-out;
+}
+
+/* Image loading placeholder */
+.image-placeholder {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Notification styles */
+.notification {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.notification.success {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.notification.error {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.notification.warning {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.notification.info {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Modal overlay */
+.modal-overlay {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+.modal-content {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Responsive text truncation */
+.text-truncate {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.text-truncate-1 {
+  -webkit-line-clamp: 1;
+}
+
+.text-truncate-2 {
+  -webkit-line-clamp: 2;
+}
+
+.text-truncate-3 {
+  -webkit-line-clamp: 3;
+}
+
+/* Custom focus styles */
+.focus-ring:focus {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.gradient-warning {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.gradient-danger {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+/* Animation for page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-primary {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+  }
+  
+  .card {
+  /* Tailwind @apply removed: use regular CSS or className in JSX */
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .campaign-card:hover {
+    transform: none;
+  }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles can be added here when needed */
+}
+
+/* Custom utility classes */
+.ring-blue {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.ring-green {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.5);
+}
+
+.ring-red {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5);
+}
+
+/* Z-index layers */
+.z-dropdown {
+  z-index: 1000;
+}
+
+.z-modal {
+  z-index: 2000;
+}
+
+.z-tooltip {
+  z-index: 3000;
+}
+
+/* Custom spacing */
+.space-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Aspect ratio containers */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* Custom transitions */
+.transition-slow {
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-fast {
+  transition: all 0.15s ease-in-out;
+}
