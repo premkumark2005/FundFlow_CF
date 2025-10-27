@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL - Update to use the correct backend port
-const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const baseURL = process.env.REACT_APP_API_URL || 'https://fundflow-backend.onrender.com';
 
 // Public API instance (no auth required)
 const publicAPI = axios.create({
