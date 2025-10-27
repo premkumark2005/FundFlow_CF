@@ -1,4 +1,4 @@
-const express = require('express');
+https://fundflow-backend.onrender.comconst express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['https://fundflow-18jn.onrender.com', 'https://fundflow-18jn.onrender.com'],
+  origin: ['https://fundflow-backend.onrender.com', 'https://fundflow-backend.onrender.com'],
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
